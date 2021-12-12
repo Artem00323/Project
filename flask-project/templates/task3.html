@@ -1,0 +1,39 @@
+<head>
+    <meta charset="UTF-8">
+    <title>TASK3</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/task3.css')}}">
+</head>
+<body>
+    <h1>MORE Plots</h1>
+
+    <container>
+        <h2>Heatmap</h2>
+        <img src="/static/graphs/heatmap.png">
+    </container>
+
+    <container1>
+        <h3>Correlation</h3>
+        <img src="/static/graphs/correlation.png">
+    </container1>
+
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="/task1">Task 1</a></li>
+            <li><a href="/task2">Task 2</a></li>
+            <li><a href="/">Main</a></li>
+            <li><a href="/task4">Task 4</a></li>
+            <li><a href="/">Task 5</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function openMenu() {
+            document.getElementById("sidebar").classList.toggle('active');
+        }
+    </script>
+</body>
