@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TASK1</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/task1.css')}}">
+</head>
+<body>
+    <h1>Mean, Median, Standard Deviation</h1>
+    
+    <container>
+        {% for table in tables %}
+                {{titles[loop.index]}}
+                {{ table|safe }}
+        {% endfor %} 
+    </container>
+
+    <container1>
+        {% for table in tables2 %}
+                {{titles2[loop.index][12:]}}
+                {{ table|safe }}
+        {% endfor %} 
+    </container1>
+
+    <container2>
+        {% for table in tables3 %}
+                {{titles3[loop.index][6:]}}
+                {{ table|safe }}
+        {% endfor %} 
+    </container2>
+
+    <container3>
+        {% for table in tables4 %}
+                {{titles4[loop.index][6:]}}
+                {{ table|safe }}
+        {% endfor %} 
+    </container3>
+
+
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="/">Main</a></li>
+            <li><a href="/task2">Task 2</a></li>
+            <li><a href="/task3">Task 3</a></li>
+            <li><a href="/task4">Task 4</a></li>
+            <li><a href="/">Task 5</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function openMenu() {
+            document.getElementById("sidebar").classList.toggle('active');
+        }
+    </script>
+</body>

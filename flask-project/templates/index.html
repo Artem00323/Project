@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>project</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+    <h1>1985 Auto Imports Database</h1>
+    
+    <container>
+        {% for table in tables %}
+                {{titles[loop.index][7:]}}
+                {{ table|safe }}
+        {% endfor %}
+    </container>
+
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="/task1">Task 1</a></li>
+            <li><a href="/task2">Task 2</a></li>
+            <li><a href="/task3">Task 3</a></li>
+            <li><a href="/task4">Task 4</a></li>
+            <li><a href="/task5">Task 5</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function openMenu() {
+            document.getElementById("sidebar").classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

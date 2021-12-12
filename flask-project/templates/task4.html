@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TASK2</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/task4.css')}}">
+</head>
+<body>
+    <h1>My results</h1>
+
+    <h2>You can check my results via github</h2>
+    <h3><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://github.com/Artem00323/Project</a></h3>
+
+
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="/task1">Task 1</a></li>
+            <li><a href="/task2">Task 2</a></li>
+            <li><a href="/task3">Task 3</a></li>
+            <li><a href="/">Main</a></li>
+            <li><a href="/">Task 5</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function openMenu() {
+            document.getElementById("sidebar").classList.toggle('active');
+        }
+    </script>
+</body>
