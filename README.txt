@@ -1,5 +1,5 @@
 download the directory with 
-1) "git clone https://github.com/Artem00323/Project.git"
+1) git clone https://github.com/Artem00323/Project.git
 2) cd Project
 3) cd flask-project
 4) pip install -r requirements.txt
