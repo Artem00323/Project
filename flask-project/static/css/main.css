@@ -1,0 +1,99 @@
+body {
+    background: rgb(123, 93, 255);
+}
+
+h1 {
+    position: absolute;
+    left: 300px;
+    right: 300px;
+    color: #000080;
+    font-size: 200%;
+    font-family: Arial, Verdana, sans-serif;
+    text-align: center;
+}
+
+container {
+    position: absolute;
+    top: 130px;
+}
+
+/* TABLE */
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    border-spacing: 0;
+    text-align: center;
+}
+
+th {
+    background: #BCEBDD;
+    color: white;
+    text-shadow: 0 1px 1px #2D2020;
+    padding: 10px 20px;
+}
+
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+
+td {
+    padding: 10px 20px;
+    background: #F8E391;
+}
+
+/* SIDEBAR */
+#sidebar  {
+    position: fixed;
+    width: 250px;
+    background: #000080;
+    border-right: 4px solid rgb(83, 45, 255);
+    left: -254px;
+    border-radius: 10px;
+
+    -moz-transition: all 600ms;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar ul li {
+    width: 90%;
+    margin-left: 10%;
+    font-size: 1.1em;
+    list-style: none;
+    padding: 15px 10px;
+}
+
+#sidebar ul li a {
+    color: #F8E391;
+    text-decoration: none;
+}
+
+#sidebar ul li a:hover {color: #BCEBDD}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 270px;
+    top: 20px;
+    background: rgb(83, 45, 255);
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#sidebar .toggle-btn:hover {background: #000080;}
+#sidebar .toggle-btn:hover span {background: rgb(83, 45, 255);}
+
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: #000080;
+    margin: 4px;
+}
